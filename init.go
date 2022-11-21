@@ -78,10 +78,10 @@ func initEx() error {
 			return err
 		}
 	}
-	return initEx2()
+	return initEx2(filePath)
 }
-func initEx2() error {
-	fontPath, err := findfont.Find("Alibaba-PuHuiTi-Medium.ttf")
+func initEx2(filePath string) error {
+	fontPath, err := findfont.Find(filePath)
 	if err != nil {
 		log.Println(err)
 		return err
