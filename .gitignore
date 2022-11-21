@@ -1,0 +1,38 @@
+.DS_Store
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.o
+*.a
+*.zip
+*.rar
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+*.prof
+
+*.kns
+
+# logs
+log
+logs
+
+# bak
+bak
+
+# custom
+open_api_setting
+config.yaml
+
+# https://git-scm.com/docs/gitignore
+!/conf
+/conf/*
+!/conf/config.simple.yaml
+
