@@ -60,6 +60,7 @@ func init() {
 
 func initEx() error {
 	fileName := "Alibaba-PuHuiTi-Medium.ttf"
+	// fileName := "Alibaba-PuHuiTi-Light.ttf"
 	fileBody, err := fonts.FontList.ReadFile(fileName)
 	if err != nil {
 		log.Println(err)
