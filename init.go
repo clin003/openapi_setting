@@ -44,7 +44,7 @@ func init() {
 			os.Setenv("FYNE_FONT", path)
 			break
 		}
-		if strings.Contains(path, "CJK") {
+		if strings.Contains(path, "CJK") && strings.HasSuffix(path, ".ttf") {
 			os.Setenv("FYNE_FONT", path)
 			break
 		}
