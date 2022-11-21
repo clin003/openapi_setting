@@ -37,3 +37,4 @@ config.yaml
 !/conf/config.simple.yaml
 
 /fyne-cross
+/FontLibrary
