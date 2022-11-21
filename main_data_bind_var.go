@@ -4,10 +4,13 @@ import (
 	"io/ioutil"
 	"log"
 	"open_api_setting/app_conf"
+	"open_api_setting/hlty_reg"
 	"open_api_setting/http_info"
+	"open_api_setting/orther_info"
 	"open_api_setting/sdk_jingdong"
 	"open_api_setting/sdk_pinduoduo"
 	"open_api_setting/sdk_taobao"
+	"open_api_setting/webhook_info"
 
 	yaml "gopkg.in/yaml.v3"
 )
@@ -48,6 +51,15 @@ func save() error {
 		return err
 	}
 	if err := http_info.Save(); err != nil {
+		return err
+	}
+	if err := orther_info.Save(); err != nil {
+		return err
+	}
+	if err := webhook_info.Save(); err != nil {
+		return err
+	}
+	if err := hlty_reg.Save(); err != nil {
 		return err
 	}
 	return nil

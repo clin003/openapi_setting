@@ -15,7 +15,7 @@ func main() {
 	// mainShow(window)
 	appTabs(window)
 	// 尺寸
-	window.Resize(fyne.Size{Width: 400, Height: 80})
+	window.Resize(fyne.Size{Width: 500, Height: 80})
 	// 居中显示
 	window.CenterOnScreen()
 	// 循环运行

@@ -36,3 +36,4 @@ config.yaml
 /conf/*
 !/conf/config.simple.yaml
 
+/fyne-cross

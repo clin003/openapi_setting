@@ -16,10 +16,6 @@ func init() {
 		log.Println(path)
 		//楷体:simkai.ttf
 		//黑体:simhei.ttf
-		if strings.Contains(path, "simkai.ttf") {
-			os.Setenv("FYNE_FONT", path)
-			break
-		}
 		if strings.Contains(path, "Alibaba-PuHuiTi-Medium.ttf") {
 			os.Setenv("FYNE_FONT", path)
 			break
@@ -33,6 +29,22 @@ func init() {
 			break
 		}
 		if strings.Contains(path, "STHeiti Light.ttc") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
+		if strings.Contains(path, "simkai.ttf") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
+		if strings.Contains(path, "simhei.ttf") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
+		if strings.Contains(path, "Arial") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
+		if strings.Contains(path, "Unicode") {
 			os.Setenv("FYNE_FONT", path)
 			break
 		}
