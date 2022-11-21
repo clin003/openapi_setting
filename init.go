@@ -40,11 +40,23 @@ func init() {
 			os.Setenv("FYNE_FONT", path)
 			break
 		}
+		if strings.Contains(path, "Hack") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
+		if strings.Contains(path, "CJK") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
 		if strings.Contains(path, "Arial") {
 			os.Setenv("FYNE_FONT", path)
 			break
 		}
 		if strings.Contains(path, "Unicode") {
+			os.Setenv("FYNE_FONT", path)
+			break
+		}
+		if strings.Contains(path, "TerminusTTF") {
 			os.Setenv("FYNE_FONT", path)
 			break
 		}
