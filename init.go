@@ -20,6 +20,7 @@ func init() {
 	if err := initEx(); err != nil {
 		log.Println("initEx", err)
 	} else {
+		log.Println("=============initEx", os.Getenv("FYNE_FONT"))
 		return
 	}
 
@@ -54,7 +55,7 @@ func init() {
 		}
 
 	}
-	log.Println("=============", os.Getenv("FYNE_FONT"))
+	log.Println("=============init", os.Getenv("FYNE_FONT"))
 }
 
 func initEx() error {
@@ -87,8 +88,7 @@ func initEx2(filePath string) error {
 		return err
 	}
 
-	// // load the font with the freetype library
-	// // 原作者使用的ioutil.ReadFile已经弃用
+	// load the font with the freetype library
 	fontData, err := os.ReadFile(fontPath)
 	if err != nil {
 		log.Println(err)
