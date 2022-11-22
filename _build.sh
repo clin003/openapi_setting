@@ -16,11 +16,11 @@
 # 	version       Print the fyne-cross version information
 # Use "fyne-cross <command> -help" for more information about a command.
 # fyne-cross windows -arch=amd64,386
-
+rm -rf ./fyne-cross
 sudo docker image prune -af
 sudo ./cross windows -arch=*
 sudo ./cross linux -arch=*
-sudo ./cross darwin -arch=*
-sudo docker image prune -af
-sudo ./cross android
-sudo ./cross freebsd
+#sudo ./cross darwin -arch=*
+#sudo docker image prune -af
+#sudo ./cross android
+#sudo ./cross freebsd
