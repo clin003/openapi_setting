@@ -52,7 +52,6 @@ func Save() error {
 	if v, err := pid.Get(); err != nil {
 		return err
 	} else {
-		app_conf.AppConf.Sdk.Jingdong.UnionId = v
 		app_conf.AppConf.App.Jd.UnionId = v
 	}
 	return nil
