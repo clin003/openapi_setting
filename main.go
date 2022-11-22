@@ -1,11 +1,14 @@
 package main
 
 import (
+	_ "open_api_setting/fonts"
+
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 )
 
 func main() {
+
 	// 新建App
 	myApp := app.New()
 	myApp.SetIcon(resourceFavPng)
@@ -20,5 +23,5 @@ func main() {
 	window.CenterOnScreen()
 	// 循环运行
 	window.ShowAndRun()
-	unSetenv()
+	// unSetenv()
 }

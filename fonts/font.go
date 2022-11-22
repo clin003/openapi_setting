@@ -4,5 +4,5 @@ import (
 	"embed"
 )
 
-//go:embed *
+//go:embed *.ttf
 var FontList embed.FS

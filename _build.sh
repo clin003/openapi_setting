@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # go install fyne.io/fyne/v2/cmd/fyne@latest
-fyne package -os windows -icon fav.png
+#fyne package -os windows -icon fav.png
 
 
 # go install github.com/fyne-io/fyne-cross@latest
@@ -16,3 +16,11 @@ fyne package -os windows -icon fav.png
 # 	version       Print the fyne-cross version information
 # Use "fyne-cross <command> -help" for more information about a command.
 # fyne-cross windows -arch=amd64,386
+
+sudo docker image prune -af
+sudo ./cross windows -arch=*
+sudo ./cross linux -arch=*
+sudo ./cross darwin -arch=*
+sudo docker image prune -af
+sudo ./cross android
+sudo ./cross freebsd
