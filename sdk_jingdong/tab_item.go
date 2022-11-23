@@ -62,19 +62,19 @@ func Show(parent fyne.Window) fyne.CanvasObject {
 	title := widget.NewLabel(title())
 	labelAppkey := widget.NewLabel("appkey:")
 	inputAppkey := widget.NewEntryWithData(appkey)
-	inputAppkey.SetPlaceHolder("请输入appkey")
+	inputAppkey.SetPlaceHolder("请输入appkey (可选配置)")
 
 	labelAppsert := widget.NewLabel("appsert:")
 	inputAppseret := widget.NewEntryWithData(appsecret)
-	inputAppseret.SetPlaceHolder("请输入appsert")
+	inputAppseret.SetPlaceHolder("请输入appsert (可选配置)")
 
 	labelAdzoneid := widget.NewLabel("adzoneid:")
 	inputAdzoneid := widget.NewEntryWithData(adzoneid)
-	inputAdzoneid.SetPlaceHolder("请输入adzoneid: PID第三段数字")
+	inputAdzoneid.SetPlaceHolder("请输入adzoneid: PID第三段数字 (可选配置)")
 
 	labelSiteid := widget.NewLabel("siteid:")
 	inputSiteid := widget.NewEntryWithData(siteid)
-	inputSiteid.SetPlaceHolder("请输入adzoneid: PID第二段数字")
+	inputSiteid.SetPlaceHolder("请输入adzoneid: PID第二段数字 (可选配置)")
 
 	labelPid := widget.NewLabel("unionid:")
 	inputPid := widget.NewEntryWithData(pid)

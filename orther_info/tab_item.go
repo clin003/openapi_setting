@@ -31,7 +31,7 @@ func init() {
 		binding.NewInt()
 }
 func title() string {
-	return "附加配置"
+	return "附加配置(可选配置)"
 }
 
 func Save() error {
