@@ -18,8 +18,10 @@
 # fyne-cross windows -arch=amd64,386
 sudo rm -rf ./fyne-cross
 sudo docker image prune -af
-sudo ./cross windows -arch=*
-sudo ./cross linux -arch=*
+#sudo ./cross windows -arch=*
+sudo ./cross windows
+#sudo ./cross linux -arch=*
+sudo ./cross linux
 #sudo ./cross darwin -arch=*
 #sudo docker image prune -af
 #sudo ./cross android
